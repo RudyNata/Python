@@ -6,7 +6,7 @@ n = int(input("Введите число долек n: \n"))
 m = int(input("Введите число долек m: \n"))
 k = int(input("Сколько долек отломить: \n"))
 
-if (m < n and k % m == 0) or (m > n and k % n == 0) or (m == n and k % n == 0):
+if (k % m == 0) or (k % n == 0):
     print("Yes")
 else:
     print("No")
