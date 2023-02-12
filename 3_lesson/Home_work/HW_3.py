@@ -12,9 +12,4 @@ scrabl_dict = {'A': 1, 'E': 1, 'I': 1, 'O': 1, 'U': 1, 'L': 1, 'N': 1, 'S': 1,
                 'Ч': 5, 'J': 8, 'X': 8, 'Ш': 8, 'Э': 8, 'Ю': 8, 'Q': 10, 'Z': 10,
                 'Ф': 10, 'Щ': 10, 'Ъ': 10}
 
-# print(sum(scrabl_dict[word[i]] from i in range(len(word)))) # Не работает, не понимаю, что не так
-
-summ = 0                             # Вроде то же самое
-for i in range(len(word)):
-    summ += scrabl_dict[word[i]]
-print(summ)
+print(sum(scrabl_dict[word[i]] for i in range(len(word))))
