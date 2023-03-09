@@ -9,3 +9,5 @@ b = int(input("Введите диапозон до: \n"))
 for i in list_a:
     if a <= i <= b:
         print(list_a.index(i))
+
+# print([ind for ind, val in enumerate(list_a) if a <= val <= b]) Корректное решение
