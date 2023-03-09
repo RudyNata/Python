@@ -9,7 +9,7 @@
 
 
 stih = input("Введите стих: ").split()
-dict_stih = {'аАоОиИыЫуУэЭ': 1}
+dict_stih = {'аАеЕёЁиИоОуУыЫэЭюЮяЯ': 1}
 print (stih)
 new = set()
 for i in stih:
@@ -19,6 +19,9 @@ if len(new) == 1:
     print('Парам пам-пам')
 else:
     print('Пам парам')
+
+# alp = "аеёиоуыэюя"
+#vowels_letter = [sum([True for j in word if j.lower() in alp]) for word in stih] - другой вариант решения
 
 
 # sum_glas = 0
