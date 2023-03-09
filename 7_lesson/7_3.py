@@ -6,3 +6,12 @@
 # characteristic - это функция, которая принимает объект и вычисляет его
 # характеристику
 
+def same_by(characteristic, objects):
+    return len(set(map(characteristic, objects))) == 1
+
+values = [0, 2, 10, 5]
+
+if same_by(lambda x: x % 2, values):
+    print('same')
+else:
+    print('different')

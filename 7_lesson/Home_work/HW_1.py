@@ -7,3 +7,37 @@
 # напишите “Парам пам-пам”, если с ритмом все в порядке и “Пам парам”, если с ритмом все не
 # в порядке
 
+
+stih = input("Введите стих: ").split()
+dict_stih = {'аАоОиИыЫуУэЭ': 1}
+print (stih)
+new = set()
+for i in stih:
+   new.add(sum([j[1] for j in dict_stih.items() for k in i if k in j[0]]))
+print(new)
+if len(new) == 1:
+    print('Парам пам-пам')
+else:
+    print('Пам парам')
+
+
+# sum_glas = 0
+# for i in stih:
+#     print(sum([j[1] for j in dict_stih.items() for k in i if k in j[0]]))
+# if sum_glas % len(stih) == 0:
+#     print('Парам пам-пам')
+# else:
+#     print('Пам парам')
+
+
+
+# sum([i[1] for i in el.items() for j in stih if j in i[0]])
+
+# def same_by(characteristic, objects):
+#     return len(set(map(characteristic, objects))) == 1
+
+# if same_by(sum([j[1] for j in dict_stih.items() for k in stih if k in j[0]]), stih):
+#     print('Парам пам-пам')
+# else:
+#     print('Пам парам')
+
